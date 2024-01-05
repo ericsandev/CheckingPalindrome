@@ -1,31 +1,58 @@
-# Create React App
+![Palindrome React](./public/preview.jpg)
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+# Checking Palindromes
 
-## Deploy Your Own
+The `isPalindrome` function is a utility used to check if a text string is a palindrome. This readme provides information on how to use this feature and its functionality.
+You can view the deployed demo [here](https://ispalindrome-app-two-lake-61.vercel.app/).
 
-Deploy your own Create React App project with Vercel.
+## Description
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+A text string is considered a palindrome if it reads the same both ways, that is, if it remains unchanged when reversed. The `isPalindrome` function takes a text string as input and performs the following steps to determine if it is a palindrome:
 
-_Live Example: https://create-react-template.vercel.app/_
+1. Clean the string: Remove all non-alphanumeric characters and convert the string to lowercase.
 
-## Available Scripts
+2. Reverse the chain.
 
-In the project directory, you can run:
+3. Compare the original string with the inverted string. If they are identical, the function returns `true`, indicating that the string is a palindrome. Otherwise, it returns `false`.
 
-### `npm start`
+## Use
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To use the `isPalindrome` function, follow these steps:
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+1. Make sure the function is imported correctly into your app or module.
 
-### `npm test`
+    ```javascript
+   import { isPalindrome } from '../utils/isPalindrome';
+    ```
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Call the `isPalindrome` function and pass it the text string you want to verify as an argument.
 
-### `npm run build`
+    ```javascript
+    const result = isPalindrome('aniline');
+    ```
 
-Builds the app for production to the `build` folder.
+3. The function will return `true` if the string is a palindrome and `false` if it is not.
 
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+    ```javascript
+    if (result) {
+      console.log('It is a palindrome');
+    } else {
+      console.log('Not a palindrome');
+    }
+    ```
+
+## Example of Use
+
+```javascript
+import { isPalindrome } from './path-to-module/isPalindrome';
+
+const text1 = 'aniline';
+const text2 = 'hello';
+
+console.log(isPalindrome(text1)); // returns true
+console.log(isPalindrome(text2)); // Returns false
+```
+
+## Dependencies
+
+The `isPalindrome` function has no external dependencies and is independent, making it easy to integrate into JavaScript projects and Node.js applications.
