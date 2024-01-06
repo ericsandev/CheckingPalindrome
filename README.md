@@ -3,7 +3,11 @@
 # Checking Palindromes
 
 The `isPalindrome` function is a utility used to check if a text string is a palindrome. This readme provides information on how to use this feature and its functionality.
+<<<<<<< HEAD
 You can view the deployed demo [here](https://checking-palindrome.vercel.app/).
+=======
+You can view the deployed demo [here](https://ispalindrome-app-two-lake-61.vercel.app/).
+>>>>>>> 1ef1ca09d97a645255aba4a5b3cd1b3a707b1eec
 
 ## Description
 
